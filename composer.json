@@ -1,0 +1,19 @@
+{
+    "name": "pastheme/theme-default",
+    "type": "pagekit-theme",
+    "version": "1.1.5",
+    "title": "Theme Default",
+    "description": "Pastheme için hazırlanan default theme",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Pastheme",
+        "email": "senemyunus@gmail.com",
+        "homepage": "http://pastheme.com"
+      }
+    ],
+    "extra": {
+      "image": "image.jpg",
+      "scripts":"scripts.php"
+    }
+}
