@@ -1,6 +1,6 @@
 <?php
 return [
-    'name'  => 'sistemim',
+    'name'  => 'theme-default',
     'main'  => function(){
 
     },
@@ -36,11 +36,12 @@ return [
             'is' => false,
             'header' => [
                 'class' => [
-                    'background' => 'uk-background-primary',
+                    'background' => 'uk-background-default',
                     'otherClass' => '',
                 ],
                 'style' => [
                     'image' => '',
+                    'style' => '',
                 ]
             ],
             'main' => [ // Content Area

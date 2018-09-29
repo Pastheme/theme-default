@@ -41,9 +41,9 @@
             </div>
 
             <div class="uk-form-row">
-                <label for="form-status" class="uk-form-label">{{ 'Other Style' | trans }}</label>
+                <label for="form-status" class="uk-form-label">{{ 'Other Class' | trans }}</label>
                 <div class="uk-form-controls">
-                    <input type="text" class="uk-width-1-1" v-model="node.theme.hero.header.otherClass">
+                    <input type="text" class="uk-width-1-1" v-model="node.theme.hero.header.class.otherClass">
                 </div>
             </div>
 
