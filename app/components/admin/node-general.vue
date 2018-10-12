@@ -34,6 +34,20 @@
         </div>
 
         <div class="uk-form-row">
+            <label class="uk-form-label">{{'Logo Size' | trans}}</label>
+            <div class="uk-form-controls uk-flex uk-flex-middle">
+                <div>
+                    <span class="uk-form-label uk-text-small">{{'Width' | trans}}</span>
+                    <input type="text" v-model="config.view.size.width" placeholder="150">
+                </div>
+                <div>
+                    <span class="uk-form-label uk-text-small">{{'Height' | trans}}</span>
+                    <input type="text" v-model="config.view.size.height" placeholder="auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-form-row">
             <label for="form-favicon" class="uk-form-label">{{ 'Favicon' | trans }}</label>
             <div class="uk-form-controls uk-form-width-large">
                 <input-image :source.sync="config.icons.favicon"></input-image>
@@ -61,7 +75,7 @@
             priority: 10
         },
 
-        props: ['config']
+        props: ['config'],
 
     }
 

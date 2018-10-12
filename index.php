@@ -82,6 +82,9 @@ return [
         'navbar' => [
             'fixed' => true,
             'contrastLogo' => '',
+            'logoSize' => [
+                'width' => 150 , 'height' => 'auto'
+            ]
         ]
     ],
 

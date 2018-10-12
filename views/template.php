@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= $view->render('head') ?>
     <?= $view->style('theme' , 'theme:assets/css/uikit.sistemim.min.css') ?>
-    <?= $view->script('theme-js' , 'theme:assets/js/uikit.min.js' , ['jquery']) ?>
-    <?= $view->script('theme-icons' , 'theme:assets/js/uikit-icons.min.js' , ['theme-js']) ?>
+    <?= $view->script('theme-js' , 'theme:assets/js/uikit.min.js' , ['jquery'] , ['async' => 'async' , 'defer' => 'defer']) ?>
+    <?= $view->script('theme-icons' , 'theme:assets/js/uikit-icons.min.js' , ['theme-js'] , ['async' => 'async' , 'defer' => 'defer']) ?>
   </head>
   <body>
     <?= $view->render('config.php') ?>

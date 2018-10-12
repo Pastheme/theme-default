@@ -1,11 +1,10 @@
 <div id="#stickyNavbar" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; <?= navbarSticky($params['hero']) ?> top: 300">
     <nav class="<?= navbarHeader($params['hero']) ?>">
         <div class="uk-container" uk-navbar>
-
             <div class="uk-navbar-left">
                 <a class="uk-navbar-brand uk-navbar-item" href="<?= $view->url()->get() ?>">
                     <?php if ($params['logo']) : ?>
-                        <img id="projectLogo" class="uk-responsive-height" src="<?= $this->escape(navbarLogo($params)) ?>" alt="">
+                        <img id="projectLogo" width="<?= !isset($params['size']['width']) || empty($params['size']['width']) ? '150':$params['size']['width'] ?>" height="<?= !isset($params['size']['height']) || empty($params['size']['height']) ? '150':$params['size']['height'] ?>"  src="<?= $this->escape(navbarLogo($params)) ?>" alt="<?= $params['title'] ?>">
                     <?php else : ?>
                         <?= $params['title'] ?>
                     <?php endif ?>
